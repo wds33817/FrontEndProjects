@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  display: block;
+}
+
+.logo {
+  height: 40px;
+}
+
+.heading-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.fas {
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-bars:before {
+  content: '\f0c9';
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #49a6e9;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: hsl(205, 86%, 17%);
+  transform: rotate(90deg);
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3 linear;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  color: hsl(209, 34%, 30%);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+/* debug了一个多小时发现，出现的位置可以影响页面效果，对于同一个元素的属性，如果css出现的位置靠后，会有更优先的效果。 */
+.show-links {
+  height: 10rem;
+}
+
+.links a:hover {
+  color: #49a6e9;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading-links {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .heading-img {
+    padding: 0;
+  }
+
+  .links {
+    height: auto;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中*/
+    padding: 1rem;
+  }
+
+  .heading > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading > ul > li > a {
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    color: hsl(209, 34%, 30%);
+    transition: all 0.3s linear;
+  }
+
+  .heading > ul > li > a:hover {
+    color: lightblue;
+  }
+
+  .fab {
+    font-family: 'Font Awesome 5 Brands';
+  }
+
+  .fa-facebook:before {
+    content: '\f09a';
+  }
+
+  .heading > ul > li > a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .heading-links {
+    display: flex;
+  }
+
+  .heading-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .heading-links ul li a {
+    margin: 0 0.5rem;
+    color: #49a6e9;
+    transition: all 0.3s linear;
+  }
+
+  .heading-links a:hover {
+    color: hsl(205, 90%, 76%);
+  }
+}

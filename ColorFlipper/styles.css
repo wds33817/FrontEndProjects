@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0 auto;
+  height: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(119, 119, 119, 0.2),
+    0 6px 20px 0 rgba(113, 113, 113, 0.19);
+}
+
+.nav-center {
+  margin: 0 auto;
+  height: 3rem;
+  text-align: center;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-center h4 {
+  display: flex;
+  color: rgb(75, 234, 254);
+  letter-spacing: 0.2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: end;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.2rem;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  height: calc(100vh - 3rem);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+
+.container button {
+  display: flex;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transition properties */
+}
+
+.color {
+  color: rgb(75, 234, 254);
+}
+
+.container button {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 0.75rem 1.25rem;
+}
+
+.container button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 定义抖动动画效果 */
+      /* 定义逐渐减小的抖动动画效果 */
+      @keyframes bounce {
+        0% {
+          transform: translateY(-5px);
+        }
+        40% {
+          transform: translateY(-5px);
+        }
+        46% {
+          transform: translateY(25px);
+        }
+        52% {
+          transform: translateY(-20px);
+        }
+        58% {
+          transform: translateY(20px);
+        }
+        64% {
+          transform: translateY(-15px);
+        }
+        70% {
+          transform: translateY(15px);
+        }
+        76% {
+          transform: translateY(-10px);
+        }
+        82% {
+          transform: translateY(10px);
+        }
+        88% {
+          transform: translateY(-5px);
+        }
+        94% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(-5px);
+        }
+      }
+
+      /* 添加需要抖动的元素样式 */
+      .bounce-element {
+        width: 100px;
+        height: 100px;
+        background-color: #007bff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        animation: bounce 2s ease infinite; /* 将动画持续时间缩短为1秒，并无限循环 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bounce-element"></div>
+  </body>
+</html>

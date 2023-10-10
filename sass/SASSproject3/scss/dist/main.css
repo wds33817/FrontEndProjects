@@ -1,0 +1,61 @@
+.warning-button {
+  background-color: orangered;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Palatino Linotype", Georgia, serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+a {
+  color: #f27731;
+}
+
+#header {
+  height: 60px;
+  background-color: #170a48;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px grey;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px grey;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px grey;
+  border-radius: 1rem;
+  border: 10px solid #232;
+  background: red;
+}
+#header #main-menu li {
+  display: inline;
+}
+#header #main-menu a {
+  color: white;
+}
+#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer {
+  height: 90px;
+  background-color: #ccf962;
+}
